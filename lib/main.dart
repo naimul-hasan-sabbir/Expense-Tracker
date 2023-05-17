@@ -23,11 +23,14 @@ class MyHomePage extends StatelessWidget {
         title: Text('Flutter App'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Card(
-            child: Text('CHART!'),
+            child: Container(width: 100, child: Text('CHART!')),
           ),
           Card(
+            color: Colors.red,
             child: Text("List of Transaction"),
           )
         ],
