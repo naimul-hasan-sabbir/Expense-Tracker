@@ -49,7 +49,7 @@ class MyHomePage extends StatelessWidget {
                     margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.purple, width: 2)),
-                    child: Text(tx.amount.toString(),
+                    child: Text('\$${tx.amount}',
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
