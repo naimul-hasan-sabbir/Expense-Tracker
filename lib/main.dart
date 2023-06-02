@@ -46,11 +46,18 @@ class MyHomePage extends StatelessWidget {
             elevation: 5,
             child: Container(
               padding: EdgeInsets.all(10),
-              child: Column(children: [
-              TextField(decoration: InputDecoration(labelText: 'Title'),),
-              TextField(decoration: InputDecoration(labelText: 'Title'),),
-                      ],),
-            ),)
+              child: Column(
+                children: [
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Title'),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Title'),
+                  ),
+                ],
+              ),
+            ),
+          ),
           Column(
             children: transactions.map((tx) {
               return Card(
