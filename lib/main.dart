@@ -52,8 +52,15 @@ class MyHomePage extends StatelessWidget {
                     decoration: InputDecoration(labelText: 'Title'),
                   ),
                   TextField(
-                    decoration: InputDecoration(labelText: 'Title'),
+                    decoration: InputDecoration(labelText: 'Amount'),
                   ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                      primary: Colors.purple,
+                    ),
+                    onPressed: () {},
+                    child: Text("Add Transaction"),
+                  )
                 ],
               ),
             ),
