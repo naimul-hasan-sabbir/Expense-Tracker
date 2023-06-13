@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './transaction.dart';
+import './models/transaction.dart';
 import 'package:intl/intl.dart';
 
 void main() {
@@ -70,9 +70,7 @@ class MyHomePage extends StatelessWidget {
                     style: TextButton.styleFrom(
                       primary: Colors.purple,
                     ),
-                    onPressed: () {
-                      print(titleController.text)
-                    },
+                    onPressed: () {},
                     child: Text("Add Transaction"),
                   )
                 ],
