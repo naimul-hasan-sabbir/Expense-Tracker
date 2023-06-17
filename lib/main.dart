@@ -18,11 +18,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  final List<Transaction> transactions = [
-    Transaction(
-        id: 't1', title: 'New iPhone', amount: 110000.99, date: DateTime.now()),
-    Transaction(id: 't2', title: 'Burger', amount: 210, date: DateTime.now()),
-  ];
+  final List<Transaction> transactions = [];
 
   // String titleInput;
   // String amountInput;
