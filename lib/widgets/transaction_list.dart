@@ -1,6 +1,8 @@
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../models/transaction.dart';
 
@@ -12,7 +14,7 @@ class TransactionList extends StatefulWidget {
 }
 
 class _TransactionListState extends State<TransactionList> {
-  final List<Transaction> _userTransaction = [
+  final List<Transaction> _userTransactions = [
     Transaction(
         id: 't1', title: 'New iPhone', amount: 110000.99, date: DateTime.now()),
     Transaction(id: 't2', title: 'Burger', amount: 210, date: DateTime.now()),
@@ -20,7 +22,7 @@ class _TransactionListState extends State<TransactionList> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: transactions.map((tx) {
+      children: _userTransactions.map((tx) {
         return Card(
           child: Row(children: [
             Container(
