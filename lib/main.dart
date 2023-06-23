@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import './models/transaction.dart';
 import 'package:intl/intl.dart';
 
+import './widgets/transaction_list.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -73,6 +75,7 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
           ),
+          TransactionList(),
         ],
       ),
     );
