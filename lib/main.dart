@@ -1,3 +1,4 @@
+import 'package:expense_tracker/widgets/new_transaction.dart';
 import 'package:flutter/material.dart';
 import './models/transaction.dart';
 import 'package:intl/intl.dart';
@@ -46,35 +47,7 @@ class MyHomePage extends StatelessWidget {
               elevation: 5,
             ),
           ),
-          Card(
-            elevation: 5,
-            child: Container(
-              padding: EdgeInsets.all(10),
-              child: Column(
-                children: [
-                  TextField(
-                    decoration: InputDecoration(labelText: 'Title'),
-                    // onChanged: (value) => titleInput = value,
-                    controller: titleController,
-                  ),
-                  TextField(
-                    decoration: InputDecoration(labelText: 'Amount'),
-                    // onChanged: (value) {
-                    //   amountInput = value;
-                    // },
-                    controller: amountController,
-                  ),
-                  TextButton(
-                    style: TextButton.styleFrom(
-                      primary: Colors.purple,
-                    ),
-                    onPressed: () {},
-                    child: Text("Add Transaction"),
-                  )
-                ],
-              ),
-            ),
-          ),
+          NewTransaction(),
           TransactionList(),
         ],
       ),
